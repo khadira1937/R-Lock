@@ -1,0 +1,78 @@
+.rlock-flow-svg {
+  filter: drop-shadow(0 0 20px rgba(44, 107, 255, 0.1));
+}
+
+.node-circle {
+  transition: all 0.2s ease-out;
+  filter: drop-shadow(0 0 8px rgba(44, 107, 255, 0.3));
+}
+
+.node-circle.active {
+  filter: drop-shadow(0 0 16px rgba(44, 107, 255, 0.8));
+  animation: node-pulse 0.6s ease-out;
+}
+
+@keyframes node-pulse {
+  0% {
+    r: 24;
+    filter: drop-shadow(0 0 16px rgba(44, 107, 255, 0.8));
+  }
+  50% {
+    r: 28;
+  }
+  100% {
+    r: 24;
+  }
+}
+
+.node-label {
+  font-size: 12px;
+  font-weight: 600;
+  fill: rgba(230, 236, 241, 0.9);
+  text-anchor: middle;
+}
+
+.node-sub {
+  font-size: 10px;
+  fill: rgba(182, 194, 207, 0.7);
+  text-anchor: middle;
+}
+
+.particle {
+  animation: particle-travel 0.8s ease-in-out forwards;
+  filter: drop-shadow(0 0 12px rgba(89, 208, 255, 0.8));
+}
+
+@keyframes particle-travel {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.planning-lane line {
+  stroke: rgba(44, 107, 255, 0.15);
+}
+
+.er-lane line {
+  stroke: rgba(153, 69, 255, 0.15);
+}
+
+.execution-lane line {
+  stroke: rgba(20, 241, 149, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .node-circle.active {
+    animation: none;
+  }
+
+  .particle {
+    animation: none;
+  }
+}
