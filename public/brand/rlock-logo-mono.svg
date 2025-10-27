@@ -1,0 +1,19 @@
+<svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>RLock</title>
+  <g fill="#ffffff">
+    <!-- R - Heavy angular with chamfered corners -->
+    <path d="M 60 60 L 200 60 L 215 75 L 215 115 Q 215 145 195 160 L 230 230 L 175 230 L 150 190 L 120 190 L 120 230 L 60 230 Z M 120 110 L 120 150 L 160 150 L 170 140 L 170 120 L 160 110 Z"/>
+    
+    <!-- L - Sharp vertical with angled base cut -->
+    <path d="M 280 60 L 340 60 L 340 180 L 435 180 L 450 195 L 450 230 L 280 230 Z"/>
+    
+    <!-- o - Hexagonal cut geometric -->
+    <path d="M 495 125 L 510 110 L 560 110 L 575 125 L 575 205 L 560 220 L 510 220 L 495 205 Z M 535 145 L 525 155 L 525 175 L 535 185 L 545 175 L 545 155 Z"/>
+    
+    <!-- c - Chamfered C with angular opening -->
+    <path d="M 620 125 L 635 110 L 695 110 L 710 125 L 695 150 L 685 140 L 675 140 L 670 145 L 670 185 L 675 190 L 685 190 L 695 180 L 710 205 L 695 220 L 635 220 L 620 205 Z"/>
+    
+    <!-- k - Sharp angular strokes -->
+    <path d="M 755 60 L 815 60 L 815 135 L 855 95 L 930 95 L 875 155 L 935 230 L 860 230 L 815 170 L 815 230 L 755 230 Z"/>
+  </g>
+</svg>

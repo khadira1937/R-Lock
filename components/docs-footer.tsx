@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Github, Twitter } from "lucide-react"
 import Link from "next/link"
+import { BrandMark } from "@/components/brand-mark"
 
 export function DocsFooter() {
   return (
@@ -17,11 +18,8 @@ export function DocsFooter() {
         >
           {/* Left: Logo & Mission */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[var(--rlock-blue)] to-[var(--neon-info)] flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-sm">X</span>
-              </div>
-              <span className="font-bold text-text-high">RLock</span>
+            <div className="mb-4">
+              <BrandMark className="text-[clamp(18px,2vw,24px)]" />
             </div>
             <p className="text-sm text-text-muted leading-relaxed">
               The layer where Solana runs smoother, faster, and reliably—under load.

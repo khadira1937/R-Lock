@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Github, Twitter } from "lucide-react"
+import { BrandMark } from "@/components/brand-mark"
 
 export function FooterSection() {
   return (
@@ -15,16 +16,11 @@ export function FooterSection() {
           className="flex flex-col md:flex-row items-center justify-between gap-8"
         >
           {/* Left: Logo & Mission */}
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--rlock-blue)] to-[var(--neon-info)] flex items-center justify-center">
-              <span className="text-white font-bold text-lg">X</span>
-            </div>
-            <div>
-              <div className="font-bold text-text-high">RLock</div>
-              <p className="text-sm text-text-muted max-w-xs">
-                The layer where Solana runs smoother, faster, and reliably—under load.
-              </p>
-            </div>
+          <div className="flex flex-col items-center md:items-start gap-3">
+            <BrandMark className="text-[clamp(18px,2vw,24px)]" />
+            <p className="text-sm text-text-muted max-w-xs text-center md:text-left">
+              The layer where Solana runs smoother, faster, and reliably—under load.
+            </p>
           </div>
 
           {/* Right: Status & Links */}

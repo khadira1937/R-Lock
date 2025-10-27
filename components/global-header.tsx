@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Github, Moon, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { BrandMark } from "@/components/brand-mark"
 
 export function GlobalHeader() {
   const pathname = usePathname()
@@ -30,13 +31,14 @@ export function GlobalHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border-subtle)] glass-bg">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--rlock-blue)] to-[var(--neon-info)] flex items-center justify-center group-hover:shadow-lg group-hover:shadow-[var(--rlock-blue)]/30 transition-all duration-300">
-            <span className="text-white font-bold text-lg">X</span>
-          </div>
-          <span className="font-bold text-text-high hidden sm:inline">RLock</span>
+        <Link 
+          href="/" 
+          className="flex items-center py-2 -ml-4 md:-ml-8"
+          aria-label="RLock home"
+        >
+          <BrandMark />
         </Link>
 
         {/* Desktop Nav */}

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" role="img">
+  <title>RL</title>
+  <defs>
+    <!-- Blue to Cyan gradient -->
+    <linearGradient id="glyphGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a8fff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle glow -->
+    <filter id="glyphGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Glow layer -->
+  <g filter="url(#glyphGlow)" opacity="0.5">
+    <!-- R - Compact angular -->
+    <path fill="url(#glyphGradient)" d="M 40 40 L 120 40 L 130 50 L 130 85 Q 130 105 115 115 L 140 180 L 105 180 L 90 140 L 75 140 L 75 180 L 40 180 Z M 75 70 L 75 110 L 105 110 L 110 105 L 110 75 L 105 70 Z"/>
+    
+    <!-- L - Aligned with R stem -->
+    <path fill="url(#glyphGradient)" d="M 150 40 L 185 40 L 185 150 L 230 150 L 240 160 L 240 180 L 150 180 Z"/>
+  </g>
+  
+  <!-- Main layer -->
+  <g>
+    <!-- R - Compact angular -->
+    <path fill="url(#glyphGradient)" d="M 40 40 L 120 40 L 130 50 L 130 85 Q 130 105 115 115 L 140 180 L 105 180 L 90 140 L 75 140 L 75 180 L 40 180 Z M 75 70 L 75 110 L 105 110 L 110 105 L 110 75 L 105 70 Z"/>
+    
+    <!-- L - Aligned with R stem -->
+    <path fill="url(#glyphGradient)" d="M 150 40 L 185 40 L 185 150 L 230 150 L 240 160 L 240 180 L 150 180 Z"/>
+  </g>
+</svg>
