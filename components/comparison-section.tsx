@@ -29,7 +29,7 @@ export function ComparisonSection({ isRunning }: ComparisonSectionProps) {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <ComparisonCard title="Baseline (Plain Solana)" isRLock={false} isRunning={isRunning} />
-          <ComparisonCard title="RLock (Lanes + OCC + ER)" isRLock={true} isRunning={isRunning} />
+          <ComparisonCard title="RLock" isRLock={true} isRunning={isRunning} />
         </div>
 
         {/* Diff Banner */}

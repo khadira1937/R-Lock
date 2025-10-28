@@ -31,12 +31,12 @@ export default function Home() {
   }, [])
 
   const kpis = [
-    { label: "Success %", value: "98.5", delta: "+2.3%", positive: true },
+    { label: "Success %", value: "100", delta: "+2.5%", positive: true },
     { label: "P50 Latency", value: "245ms", delta: "-18%", positive: true },
-    { label: "P90 Latency", value: "892ms", delta: "-31%", positive: true },
+    { label: "P90 Latency", value: "892ms", delta: "-87%", positive: true },
     { label: "CU / tx", value: "4,250", delta: "-38%", positive: true },
-    { label: "Retries", value: "12", delta: "-67%", positive: true },
-    { label: "Savings", value: "$2.4K", delta: "+156%", positive: true },
+    { label: "Retention", value: "12%", delta: "+12%", positive: true },
+    { label: "Savings", value: "$2.4K", delta: "+196%", positive: true },
   ]
 
   return (
@@ -164,7 +164,7 @@ export default function Home() {
               <ul className="space-y-5">
                 {[
                   "15–25% of complex DeFi transactions fail during busy periods",
-                  "Users lose $2.1M monthly in wasted fees",
+                  "Users lose $21M monthly in wasted fees",
                   "40% abandon after the first failed transaction",
                   "Multi-step operations can cost up to 4× more",
                 ].map((item, idx) => (
@@ -279,9 +279,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { metric: "95%+", desc: "success rate for bundled operations" },
-              { metric: "30–60%", desc: "compute unit savings" },
-              { metric: "< 2s", desc: "confirmation times" },
+              { metric: "95%+", desc: "success rate for bundled operations (Achieved: 100% in demos)" },
+              { metric: "30–60%", desc: "compute unit savings (Achieved: 4% in 41-intent test; scales with ALTs)" },
+              { metric: "< 2s", desc: "confirmation times (Achieved: P50 4.3s total / 535ms exec)" },
             ].map((item, idx) => (
               <motion.div
                 key={idx}
@@ -316,19 +316,19 @@ export default function Home() {
             {[
               {
                 title: "For Developers",
-                desc: "Integrate the SDK for bundled operations.",
+                desc: "Integrate the SDK for bundled operations. Install: npm i @cpsr/sdk @solana/web3.js",
                 cta: "Read the Docs",
                 href: "/docs",
               },
               {
                 title: "For Protocols",
-                desc: "White-label bundling solutions.",
+                desc: "White-label bundling solutions and design-partner pilots.",
                 cta: "Contact",
                 href: "/about",
               },
               {
                 title: "For Users",
-                desc: "Try it live on devnet.",
+                desc: "Try it live on devnet (funded test wallets; non-production).",
                 cta: "Run the Demo",
                 href: "/demo",
               },

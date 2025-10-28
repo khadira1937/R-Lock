@@ -205,7 +205,7 @@ export function StaticComparison({ className = "" }: StaticComparisonProps) {
         >
           {/* Header */}
           <div>
-            <h4 className="text-xl md:text-2xl font-bold text-text-high">RLock (Lanes + OCC + ER)</h4>
+            <h4 className="text-xl md:text-2xl font-bold text-text-high">RLock</h4>
             <div className="flex items-center gap-2 mt-2">
               <span className="text-xs font-semibold text-text-muted uppercase tracking-wider bg-[var(--panel-bg)] px-2 py-1 rounded">
                 Devnet
