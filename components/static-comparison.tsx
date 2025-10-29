@@ -63,9 +63,9 @@ export function StaticComparison({ className = "" }: StaticComparisonProps) {
     totalFee: 10048,
     avgFee: 5024,
     planCoverage: "100%",
-    latencyP50: 214,
-    latencyP95: 222,
-    feeVsBaseline: 195664,
+    latencyP50: 4.65,
+    latencyP95: 4.66,
+    feeVsBaseline: 195673,
     feeSavingsPercent: 95.12
   }
 
@@ -210,9 +210,7 @@ export function StaticComparison({ className = "" }: StaticComparisonProps) {
               <span className="text-xs font-semibold text-text-muted uppercase tracking-wider bg-[var(--panel-bg)] px-2 py-1 rounded">
                 Devnet
               </span>
-              <span className="text-xs font-semibold text-[var(--neon-success)] uppercase tracking-wider bg-[var(--panel-bg)] px-2 py-1 rounded">
-                ER: On
-              </span>
+              
             </div>
           </div>
 

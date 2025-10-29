@@ -31,12 +31,12 @@ export default function Home() {
   }, [])
 
   const kpis = [
-    { label: "Success %", value: "100", delta: "+2.5%", positive: true },
-    { label: "P50 Latency", value: "245ms", delta: "-18%", positive: true },
-    { label: "P90 Latency", value: "892ms", delta: "-87%", positive: true },
-    { label: "CU / tx", value: "4,250", delta: "-38%", positive: true },
-    { label: "Retention", value: "12%", delta: "+12%", positive: true },
-    { label: "Savings", value: "$2.4K", delta: "+196%", positive: true },
+    { label: "Success %", value: "100", delta: "", positive: true },
+    { label: "P50 Latency", value: "245ms", delta: "", positive: true },
+    { label: "P90 Latency", value: "892ms", delta: "", positive: true },
+    { label: "CU / tx", value: "4,250", delta: "", positive: true },
+    { label: "Retention", value: "12%", delta: "", positive: true },
+    { label: "Savings", value: "$2.4K", delta: "", positive: true },
   ]
 
   return (

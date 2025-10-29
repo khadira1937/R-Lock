@@ -10,18 +10,19 @@ export default function WhenToUsePage() {
     <DocPageWrapper
       title="When to Use RLock"
       breadcrumbs={[{ label: "Docs", href: "/docs" }, { label: "Overview" }, { label: "When to Use RLock" }]}
-      prevPage={{ title: "Key Features", href: "/docs/overview/key-features" }}
+      prevPage={{ title: "How it works", href: "/docs/overview/key-features" }}
       nextPage={{ title: "Install & Setup", href: "/docs/quickstart/install-setup" }}
     >
       <div className="space-y-6 text-text-mid leading-relaxed">
-        <p>Use RLock if you:</p>
+        <p>Use RLock when you need any of the following:</p>
 
         <ul className="list-disc list-inside space-y-2 ml-4">
-          <li>Combine several instructions/intents and need size checks.</li>
-          <li>Hit hot-account contention and want retries and priority fees.</li>
-          <li>Want consistent ComputeBudget insertion without hand-crafting.</li>
-          <li>Prefer pluggable ALT sources to shrink messages.</li>
-          <li>Need to switch between L1 and Router lanes without changing logic.</li>
+          <li>Multi-step flows that must be dependency-aware and size-safe under v0 limits.</li>
+          <li>You’re hitting hot-account contention and need retries + smart priority-fee control.</li>
+          <li>You want consistent ComputeBudget insertion without hand-tuning on every tx.</li>
+          <li>You prefer pluggable ALT sources to keep messages compact.</li>
+          <li>You want to switch lanes (L1 vs Router/ER) without changing your business logic.</li>
+          <li>You care about end-to-end simulation before paying fees and clean, typed results after.</li>
         </ul>
       </div>
     </DocPageWrapper>

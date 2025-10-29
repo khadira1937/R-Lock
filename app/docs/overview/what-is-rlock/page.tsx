@@ -15,31 +15,26 @@ export default function WhatIsRLockPage() {
         { label: "Overview", href: "/docs/overview/what-is-rlock" },
         { label: "What is RLock?" },
       ]}
-      nextPage={{ title: "Key Features", href: "/docs/overview/key-features" }}
+      nextPage={{ title: "How it works", href: "/docs/overview/key-features" }}
     >
       <div className="space-y-6 text-text-mid leading-relaxed">
         <p>
-          RLock is a pragmatic SDK that turns many user intents into safe, efficient Solana transactions. It gives you:
+          RLock is an execution layer + SDK that turns a multi-step user goal (swap → LP → stake, etc.) into safe, efficient Solana transactions. Instead of firing 5 fragile txs and hoping nothing breaks, RLock plans the whole flow off-chain, splits it into conflict-aware chunks, budgets fees/compute, simulates end-to-end, then submits on the best rail (L1 or ER-style lane on devnet).
         </p>
-        <ul className="list-disc list-inside space-y-2 ml-4">
-          <li>Compute budget tuning (reasonable CU limits and priority fees).</li>
-          <li>ALT offloading to shrink message size.</li>
-          <li>Message-size safety with explicit checks for v0 transactions.</li>
-          <li>Reliable submission lanes with retries and optional preflight.</li>
-        </ul>
+       
 
         <h2 className="text-2xl font-bold text-text-high mt-8 mb-4">Why it matters</h2>
         <p>
-          Real dApps combine multiple instructions and still need to fit Solana's message size while finishing quickly
-          under load. RLock's small, typed surface helps you assemble, size-check, and send transactions without footguns.
+          Real DeFi flows fail disproportionately during network spikes. Users pay fees on partial progress, get stuck on hot accounts, and abandon after the first fail. RLock replaces that chaos with one reliable action that’s fee-aware, size-safe, and contention-resilient.
         </p>
 
         <h2 className="text-2xl font-bold text-text-high mt-8 mb-4">What RLock does for you</h2>
         <ul className="list-disc list-inside space-y-2 ml-4">
-          <li>Inserts ComputeBudget instructions (limit + price) based on a policy.</li>
-          <li>Optionally resolves Address Lookup Tables (ALTs) to cut byte size.</li>
-          <li>Builds v0 VersionedTransactions and throws if they exceed limits.</li>
-          <li>Sends via L1 RPC or a Router you control — with retries/backoff.</li>
+          <li>Capture intents, not low-level ixs. Express the whole goal once; we plan the dependency order.</li>
+          <li>Compute budget tuning. Apply sensible CU limit & priority fee based on policy (fixed or recent-fees).</li>
+          <li>Message-size safety. Build v0 transactions with explicit byte-size checks and ALT offloading.</li>
+          <li>Lane selection. Choose between direct L1 and a high-throughput ER-style rail (devnet) automatically.</li>
+          <li>Retries & preflight. Robust submission with backoff and optional preflight per lane.</li>
         </ul>
       </div>
     </DocPageWrapper>

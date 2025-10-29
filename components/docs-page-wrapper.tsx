@@ -94,16 +94,7 @@ export function DocPageWrapper({ title, description, children, breadcrumbs, prev
           )}
         </motion.div>
 
-        {/* Edit on GitHub */}
-        <a
-          href={`https://github.com/rlock/docs/edit/main/pages${pathname}.tsx`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed right-8 bottom-8 flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--section-bg)] border border-[var(--border-subtle)] text-text-muted hover:text-text-high hover:border-[var(--rlock-blue)] transition-all"
-        >
-          <Github className="w-4 h-4" />
-          <span className="text-sm">Edit on GitHub</span>
-        </a>
+
       </div>
     </div>
   )

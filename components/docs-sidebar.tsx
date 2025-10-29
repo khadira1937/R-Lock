@@ -28,7 +28,7 @@ const docSections: DocSection[] = [
     icon: <Book className="w-4 h-4" />,
     items: [
       { id: "what-is-rlock", title: "What is RLock?", href: "/docs/overview/what-is-rlock" },
-      { id: "key-features", title: "Key Features", href: "/docs/overview/key-features" },
+      { id: "key-features", title: "How it works", href: "/docs/overview/key-features" },
       { id: "when-to-use", title: "When to Use RLock", href: "/docs/overview/when-to-use" },
     ],
   },
@@ -146,8 +146,8 @@ export function DocsSidebar() {
 
   if (!mounted) return null
 
-  return (
-    <aside className="bg-[var(--panel-bg)] border-r border-[var(--border-subtle)] h-full flex flex-col">
+    return (
+      <aside className="bg-[var(--panel-bg)] border-r border-[var(--border-subtle)] min-h-screen h-full flex flex-col">
       <div className="px-4 py-3 border-b border-[var(--border-subtle)]">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
@@ -160,12 +160,13 @@ export function DocsSidebar() {
         </div>
       </div>
 
-      <nav 
-        className="flex-1 overflow-y-auto space-y-1.5 px-3 py-4" 
-        role="tree"
-        tabIndex={0}
-        aria-label="Documentation navigation"
-      >
+        <nav 
+          className="flex-1 overflow-y-hidden hover:overflow-y-auto space-y-1.5 px-3 py-4" 
+          style={{ maxHeight: 'calc(100vh - 56px)' }}
+          role="tree"
+          tabIndex={0}
+          aria-label="Documentation navigation"
+        >
         {filteredSections.map((section) => (
           <div key={section.id} className="space-y-1">
             <button
