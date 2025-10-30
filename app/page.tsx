@@ -35,8 +35,8 @@ export default function Home() {
     { label: "Success %", value: "100", delta: "", positive: true },
     { label: "P50 Latency", value: "245ms", delta: "", positive: true },
     { label: "P90 Latency", value: "892ms", delta: "", positive: true },
-    { label: "CU reduction", value: "~3–4% (demo)", delta: "", positive: true },
-    { label: "Retries/fallbacks", value: "0 ER first", delta: "", positive: true },
+    { label: "CU reduction", value: "~3–4% (devnet)", delta: "", positive: true },
+    { label: "Retries/fallbacks", value: "0", delta: "", positive: true },
     { label: "Savings", value: "Fee: >90%", delta: "", positive: true },
   ]
 
