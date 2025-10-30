@@ -15,15 +15,14 @@ export function GlobalHeader() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Docs", href: "/docs" },
-    { label: "Demo", href: "/demo" },
     { label: "About", href: "/about" },
+    { label: "Docs", href: "/docs" },
   ]
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/"
     if (href === "/docs") return pathname.startsWith("/docs")
-    if (href === "/demo") return pathname === "/demo"
+    if (href === "/about") return pathname === "/about"
     return pathname === href
   }
 

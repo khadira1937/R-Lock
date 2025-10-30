@@ -8,6 +8,7 @@ import { KPIPill } from "@/components/kpi-pill"
 import { AuroraBackground } from "@/components/aurora-background"
 import { FooterSection } from "@/components/footer-section"
 import { StaticComparison } from "@/components/static-comparison"
+import Partners from "@/components/sections/Partners"
 import { Section } from "@/components/ux/Section"
 import { SectionHeading } from "@/components/ux/SectionHeading"
 import { SectionSeparator } from "@/components/ux/SectionSeparator"
@@ -74,7 +75,7 @@ export default function Home() {
                 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <Link href="/demo" className="no-underline-effect">
+                <Link href="/docs" className="no-underline-effect">
                   <motion.div
                     whileHover={{ scale: prefersReducedMotion ? 1 : 1.03, y: prefersReducedMotion ? 0 : -2 }}
                     whileTap={{ scale: prefersReducedMotion ? 1 : 0.98 }}
@@ -301,6 +302,8 @@ export default function Home() {
           </div>
         </Section>
 
+        <Partners />
+
         {/* Getting Started Section */}
         <Section className="pt-24 md:pt-32 lg:pt-40">
           <SectionSeparator className="mb-24 md:mb-32 lg:mb-40" />
@@ -330,7 +333,7 @@ export default function Home() {
                 title: "For Users",
                 desc: "Try it live on devnet (funded test wallets; non-production).",
                 cta: "Run the Demo",
-                href: "/demo",
+                href: "/docs",
               },
             ].map((item, idx) => (
               <motion.div

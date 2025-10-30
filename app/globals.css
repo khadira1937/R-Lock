@@ -259,6 +259,40 @@
   }
 }
 
+@keyframes logo-shimmer-sweep {
+  0% {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+  45% {
+    opacity: 0.24;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+}
+
+@layer utilities {
+  .animate-logo-shimmer {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 5%,
+      rgba(255, 255, 255, 0.22) 45%,
+      rgba(255, 255, 255, 0) 95%
+    );
+    mix-blend-mode: screen;
+    border-radius: 9999px;
+    opacity: 0;
+    animation: logo-shimmer-sweep 1.4s ease-in-out infinite;
+    animation-play-state: paused;
+    will-change: transform, opacity;
+    pointer-events: none;
+  }
+}
+
 .animate-gradient-sweep {
   animation: gradient-sweep 10s ease-in-out infinite;
   background-size: 200% 200%;

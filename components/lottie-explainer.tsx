@@ -176,7 +176,7 @@ export function LottieExplainer() {
               </div>
             </div>
             <div className="flex gap-3 mt-6">
-              <Link href="/demo" className="flex-1">
+              <Link href="/docs" className="flex-1">
                 <Button className="w-full bg-gradient-to-r from-[#9945FF] via-[#59D0FF] to-[#14F195] text-white font-semibold">
                   Run the Demo
                 </Button>
@@ -259,7 +259,7 @@ export function LottieExplainer() {
 
             {/* CTAs */}
             <div className="flex gap-2 mt-6">
-              <Link href="/demo" className="flex-1">
+              <Link href="/docs" className="flex-1">
                 <Button className="w-full bg-gradient-to-r from-[#9945FF] via-[#59D0FF] to-[#14F195] text-white font-semibold text-sm">
                   Run Demo
                 </Button>
