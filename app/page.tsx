@@ -35,9 +35,9 @@ export default function Home() {
     { label: "Success %", value: "100", delta: "", positive: true },
     { label: "P50 Latency", value: "245ms", delta: "", positive: true },
     { label: "P90 Latency", value: "892ms", delta: "", positive: true },
-    { label: "CU / tx", value: "4,250", delta: "", positive: true },
-    { label: "Retention", value: "12%", delta: "", positive: true },
-    { label: "Savings", value: "$2.4K", delta: "", positive: true },
+    { label: "CU reduction", value: "~3–4% (demo)", delta: "", positive: true },
+    { label: "Retries/fallbacks", value: "0 ER first", delta: "", positive: true },
+    { label: "Savings", value: "Fee: >90%", delta: "", positive: true },
   ]
 
   return (
@@ -85,7 +85,7 @@ export default function Home() {
                       size="lg"
                       className="bg-gradient-to-r from-[#9945FF] via-[#59D0FF] to-[#14F195] text-white font-semibold hover:shadow-2xl hover:shadow-[#2C6BFF]/70 transition-all duration-300 text-base px-8 py-6"
                     >
-                      Run the Live Demo
+                       Getting started
                     </Button>
                   </motion.div>
                 </Link>
@@ -280,9 +280,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
-              { metric: "95%+", desc: "success rate for bundled operations (Achieved: 100% in demos)" },
-              { metric: "30–60%", desc: "compute unit savings (Achieved: 4% in 41-intent test; scales with ALTs)" },
-              { metric: "< 2s", desc: "confirmation times (Achieved: P50 4.3s total / 535ms exec)" },
+              { metric: "95%+", desc: "success rate for bundled operations (Achieved: 100% in devnet)" },
+              { metric: "30–60%", desc: "compute unit savings (Achieved: 4% in 41-intent test scales with ALTs)" },
+              { metric: ">90%", desc: "Up to 95% fee savings on devnet " },
             ].map((item, idx) => (
               <motion.div
                 key={idx}
@@ -330,9 +330,9 @@ export default function Home() {
                 href: "/about",
               },
               {
-                title: "For Users",
-                desc: "Try it live on devnet (funded test wallets; non-production).",
-                cta: "Run the Demo",
+                title: "Getting Started",
+                desc: "Install the SDK, and execute your first plan.",
+                cta: "Get started",
                 href: "/docs",
               },
             ].map((item, idx) => (
