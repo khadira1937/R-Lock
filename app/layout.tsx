@@ -39,6 +39,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`dark ${orbitron.variable}`}>
       <head>
+        {/* Google Search Console verification - pasted as requested */}
+        <meta name="google-site-verification" content="9xu7gy_LabP07ylY7T_T8uxdawyjWzNpsj2RO8Hgk10" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className={`${inter.className} antialiased bg-page text-text-high`}>
