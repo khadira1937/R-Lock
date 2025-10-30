@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"
 const orbitron = Orbitron({ subsets: ["latin"], weight: ["700", "900"], variable: "--font-orbitron" })
 
 export const metadata: Metadata = {
-  title: "RLock — Parallel Solana Execution SDK",
+  title: "RLock — Parallel Solana Execution SDK ",
   description: "Conflict-aware lanes, OCC DAG execution, and ephemeral rollups for faster, cheaper settlement on Solana.",
   generator: "Next.js",
   icons: {

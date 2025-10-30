@@ -15,7 +15,7 @@ export default function WhatIsRLockPage() {
         { label: "Overview", href: "/docs/overview/what-is-rlock" },
         { label: "What is RLock?" },
       ]}
-      nextPage={{ title: "How it works", href: "/docs/overview/key-features" }}
+      nextPage={{ title: "How it works ", href: "/docs/overview/key-features" }}
     >
       <div className="space-y-6 text-text-mid leading-relaxed">
         <p>
