@@ -15,7 +15,7 @@ export default function PricingPage() {
   // Pricing data
   const plans = [
     {
-      name: "Dev (Free)",
+      name: "Dev (Fre)",
       icon: "🛠️",
       who: "Solo builders, hackathon teams",
       price: "$0",

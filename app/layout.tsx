@@ -42,6 +42,16 @@ export default function RootLayout({
         {/* Google Search Console verification - pasted as requested */}
         <meta name="google-site-verification" content="9xu7gy_LabP07ylY7T_T8uxdawyjWzNpsj2RO8Hgk10" />
         <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Google Analytics (gtag.js) - placed in head for site-wide tracking */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7K3PF8N7LK"></script>
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\n\ngtag('config', 'G-7K3PF8N7LK');`,
+          }}
+        />
       </head>
       <body className={`${inter.className} antialiased bg-page text-text-high`}>
         <SmoothScrollProvider>
